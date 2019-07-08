@@ -1,0 +1,17 @@
+<h1 class="text-center mb-3">{{title}}</h1>
+
+<form action="/movies" method="put" class="mb-4">
+  <div class="form-group">
+    <label for="title">title</label>
+    <input type="text" name="title" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label for="desc">desc</label>
+    <input type="textarea" name="desc" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label for="year">year</label>
+    <input type="number" name="year" min="1980" max="2020" step="1" value="2019" class="form-control" />
+  </div>
+  <input type="submit" value="Modify" class="btn-xs btn-primary btn-block" />
+</form>

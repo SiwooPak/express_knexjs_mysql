@@ -1,0 +1,10 @@
+<h1 class="text-center mb-3">{{title}}</h1>
+
+<h4>Movies</h4>
+<ul class="list-group">
+  {{#each movies}}
+    <li class="list-group-item">
+      {{this.title}}: {{this.year}}
+    </li>
+  {{/each}}
+</ul>
